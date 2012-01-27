@@ -10,7 +10,7 @@ elgg.polls.init = function() {
 		// submit the vote and display the response when it arrives 	 
 	    elgg.action('action/polls/vote', {data: $('#poll-vote-form-'+guid).serialize(),
 			success : function(response) {
-			        	$('#poll-container-'+guid).html(response.result);
+			        	$('#poll-vote-form-container-'+guid).html(response.result);
 			        }
 	        });
     });
